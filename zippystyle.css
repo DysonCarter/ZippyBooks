@@ -1,0 +1,36 @@
+body {
+    font-family: "Arial";
+}
+
+h1, h2, h3 {
+    color: #0b1245;
+}
+
+nav {
+    background-color: #0b1245;
+    padding: 10px;
+}
+
+nav a {
+    color: #aba16f;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #0b1245;
+    color: #aba16f;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 10px;
+    margin: 5px 0;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title> ZippyBooks Admin Page </title>
+      <script>
+          function show() {
+              document.getElementById("out").innerHTML = document.getElementById("in").value;
+        }
+      </script>
+</head>
+<body>
+    <form action = "ZippyBooks.php"
+          method = "post">
+      <h2>Admin Page</h2>
+      <h3>Input Information:</h3>
+      <table>
+          <tr>
+            <th> id </th>
+            <th> title </th>
+            <th> price </th>
+            <th> quantity </th>
+            <th> flag </th>
+          </tr>
+          <tr>
+            <td><input type = "number"  name = "id" /></td>
+            <td><input type = "text"  name = "title"  /></td>
+            <td><input type = "number"  name = "price" /></td>
+            <td><input type = "number"  name = "quantity"  /></td>
+            <td><input type = "checkbox"  name = "flag" /></td>
+          </tr>
+      </table>
+      <p />
+<h3> Action </h3>
+      <p>
+        <input type = "radio"  name = "action"  value = "display" checked = "checked" />
+		Display all books <br />
+        <input type = "radio"  name = "action"  value = "insert" />
+		Add a new book <br />
+        <input type = "radio"  name = "action"  value = "update" />
+		Update book price (by id)<br />
+        <input type = "radio"  name = "action"  value = "delete" />
+		Delete an existing books (by id) <br />
+        <input type = "reset"  value = "Reset Form" />
+        <input type = "submit"  value = "Excute SQL" />
+<!--
+        <button type="button" onclick="show()">Show SQL</button><br />
+        <span id = "out" style="color:red"></span> <br /><br />
+-->
+        </p>
+    </form>
+    <br>
+    <a href=prj.php>Go Home</a>
+  </body>
+</html>
